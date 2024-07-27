@@ -8,10 +8,12 @@
 	<title></title>
 </head>
 <body>
+	<div class="prihlaseni">
 	<form method="post">
 		<button name="registrovat">Registrovat</button>
 		<br>
 		<button name="prihlasit">Přihlásit</button>
 	</form>
+	</div>
 </body>
 </html>
