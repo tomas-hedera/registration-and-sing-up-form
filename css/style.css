@@ -34,3 +34,14 @@ html
 {
 	transform: scale(1.3);
 }
+
+
+/*Registracni Formular*/
+
+#formContainer
+{
+	position: fixed;
+	top: 0;
+	left: -500px;
+
+}
