@@ -14,23 +14,23 @@ html
 	height: 100vh;
 }
 
-.prihlaseni form
-{
+.prihlaseni {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	gap: 15px;
 }
 
-.prihlaseni form button
+.prihlaseni button
 {
 	font-size: 1.5em;
 	padding: 5px 10px;
 	font-weight: bold;
 	transition: all 0.4s ease;
+	width: 200px;
 }
 
-.prihlaseni form button:hover
+.prihlaseni button:hover
 {
 	transform: scale(1.3);
 }
@@ -40,8 +40,72 @@ html
 
 #formContainer
 {
+	display: flex;
 	position: fixed;
-	top: 0;
+	top: 30vh;
 	left: -500px;
+	width: 350px;
+	height: 450px;
+	background-color: lightgray;
+	padding: 20px;
+	box-sizing: border-box;
+	transition: left 0.5s ease-in-out;
+	border-radius: 15px;
+}
 
+#formContainer form
+{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 15px;
+	
+}
+
+#formContainer form > div
+{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	align-items: center;
+
+
+}
+
+#formContainer form h2
+{
+	text-align: center;
+	font-size: 1.4em;
+	margin-bottom: 40px;
+	font-weight: bold;
+}
+
+#formContainer form label
+{
+	text-align: start;
+	font-weight: bold;
+}
+
+#formContainer form input
+{
+	width: 170px;
+	font-size: 1em;
+	padding: 5px 10px;
+	border-radius: 10px;
+	margin-left: 10px;
+}
+
+#formContainer form button
+{
+	padding: 5px 10px;
+	font-size: 1em;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+#formContainer.visible
+{
+	display: flex;
+	justify-content: center;
+	left: 90vh;
 }
