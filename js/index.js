@@ -6,3 +6,12 @@ document.addEventListener('DOMContentLoaded', function(){
 		formContainer.classList.add('visible');
 	});
 });
+
+document.addEventListener('DOMContentLoaded', function(){
+	const signinBtn = document.getElementById('signinBtn');
+	const formContainerRight = document.getElementById('formContainerRight');
+
+	signinBtn.addEventListener('click', function(){
+		formContainerRight.classList.add('visibleRight');
+	});
+}); 

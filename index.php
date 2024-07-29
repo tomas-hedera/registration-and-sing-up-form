@@ -16,7 +16,7 @@
 
 		<button name="registrovat" id="registrBtn">Registrovat</button>
 		<br>
-		<button name="prihlasit" id="sign-inBtn">Přihlásit</button>
+		<button name="prihlasit" id="signinBtn">Přihlásit</button>
 
 	</div>
 <!-- kontaktni formular prijizdejici zleva-->
@@ -51,7 +51,22 @@
 
 <!-- kontaktni formular prijizdejici zprava-->
  
+	<div id="formContainerRight">
+		<form method="post" id="sign-inForm">
+			<h2>Přihlášení</h2>
+			<div>
+				<label for="email">Email:</label>
+				<input type="email" name="email" id="email">
+			</div>
 
+			<div>
+				<label for="heslo">Heslo:</label>
+				<input type="password" name="heslo" id="heslo">
+			</div>
+
+			 <button name="prihlasit">Přihlásit</button>
+		</form>
+	</div>
 
 	<script src="./js/index.js"></script>
 </body>

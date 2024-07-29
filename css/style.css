@@ -59,7 +59,7 @@ body
 	border-radius: 15px;
 }
 
-#formContainer form
+#formContainer form, #formContainerRight form
 {
 	display: flex;
 	justify-content: center;
@@ -69,7 +69,7 @@ body
 	
 }
 
-#formContainer form > div
+#formContainer form > div, #formContainerRight > div
 {
 	display: flex;
 	justify-content: space-between;
@@ -79,7 +79,7 @@ body
 
 }
 
-#formContainer form h2
+#formContainer form h2, #formContainerRight form h2
 {
 	text-align: center;
 	font-size: 1.4em;
@@ -87,13 +87,13 @@ body
 	font-weight: bold;
 }
 
-#formContainer form label
+#formContainer form label, #formContainerRight label
 {
 	text-align: start;
 	font-weight: bold;
 }
 
-#formContainer form input
+#formContainer form input, #formContainerRight form input
 {
 	width: 170px;
 	font-size: 1em;
@@ -102,7 +102,7 @@ body
 	margin-left: 10px;
 }
 
-#formContainer form button
+#formContainer form button, #formContainerRight form button
 {
 	padding: 5px 10px;
 	font-size: 1em;
@@ -111,7 +111,7 @@ body
 	transition: all 0.2s ease-in;
 }
 
-#formContainer form button:hover
+#formContainer form button:hover, #formContainerRight form button:hover
 {
 	transform: scale(1.05);
 	background-color: rgb(90, 111, 230);
@@ -128,3 +128,26 @@ body
 
 
 /* Priihlašovací formular*/
+
+#formContainerRight
+{
+	display: flex;
+	position: absolute;
+	top: 30vh;
+	right: -100%;
+	max-width: 90%;
+	height: 270px;
+    background: linear-gradient(to bottom, #2174c9, #fbfbfb);
+	padding: 20px;
+	box-sizing: border-box;
+	transition: right 0.5s ease-in-out;
+	border-radius: 15px;
+}
+
+
+#formContainerRight.visibleRight
+{
+	
+	right: 50%;
+	transform: translate(50%);
+}
