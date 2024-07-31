@@ -22,6 +22,7 @@
 <!-- kontaktni formular prijizdejici zleva-->
 	<div id="formContainer">
 		<form method="post" id="registerForm">
+			<button id="closeRegister" class="closeBtn">X</button>
 			<h2>Registrace</h2>
 			<div>
 				<label for="jmeno">Jméno:</label>
@@ -35,12 +36,12 @@
 
 			<div>
 				<label for="email">Email:</label>
-				<input type="email" name="emaill" id="email">
+				<input type="email" name="emaill" id="emailRegistr">
 			</div>
 
 			<div>
 				<label for="heslo">Heslo:</label>
-				<input type="password" name="heslo" id="heslo">
+				<input type="password" name="heslo" id="hesloRegistr">
 			</div>
 
 
@@ -53,15 +54,16 @@
  
 	<div id="formContainerRight">
 		<form method="post" id="sign-inForm">
+			<button id="closeSignin" class="closeBtn">X</button>
 			<h2>Přihlášení</h2>
 			<div>
 				<label for="email">Email:</label>
-				<input type="email" name="email" id="email">
+				<input type="email" name="email" id="emailSignin">
 			</div>
 
 			<div>
 				<label for="heslo">Heslo:</label>
-				<input type="password" name="heslo" id="heslo">
+				<input type="password" name="heslo" id="hesloSignin">
 			</div>
 
 			 <button name="prihlasit">Přihlásit</button>
