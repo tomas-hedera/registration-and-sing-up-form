@@ -12,19 +12,14 @@ body,html
 	overflow: hidden;
 }
 
-.prihlaseni
-{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-}
 
 .prihlaseni {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	gap: 15px;
+	height: 100vh;
 	max-width: 100%;
 }
 
@@ -49,10 +44,10 @@ body,html
 {
 	display: flex;
 	position: absolute;
-	top: 25vh;
+	top: 15vh;
 	left: -100%;
 	max-width: 90%;
-	height: 450px;
+	height: 550px;
     background: linear-gradient(to bottom, #2174c9, #fbfbfb);
 	padding: 20px;
 	box-sizing: border-box;
@@ -172,4 +167,12 @@ body,html
 	font-size: 20px;
 	border-radius: 50%;
 	cursor: pointer;
+}
+
+/* Chybové hlašení*/
+.error
+{
+	color: red;
+	font-size: 0.9em;
+	
 }
